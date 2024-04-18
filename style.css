@@ -1,0 +1,195 @@
+/* RESET CSS */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, button, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body,
+header,
+main {
+  width: 100vw;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.maze {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#maze-table td {
+  height: 50px;
+  width: 42px;
+}
+
+.maze__border {
+  background: url(./images/sprite_paths_small.png) no-repeat -252px 0px;
+}
+
+.maze__water {
+  background: url(./images/sprite_paths_small.png) no-repeat -168px 0px;
+}
+
+.maze__path {
+  background: url(./images/sprite_paths_small.png) no-repeat;
+}
+
+.maze__treasure {
+  background: url(./images/sprite_treasures_small.png) no-repeat 0px 0px;
+}
+
+.maze__key {
+  background: url(./images/sprite_treasures_small.png) no-repeat -46px 0px;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+  padding: 16px;
+}
+
+.timer {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+}
+
+.players {
+  text-align: center;
+}
+
+.players__list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.players__list > * {
+  cursor: pointer;
+  width: 42px;
+  height: 50px;
+  transform: scale(1.2);
+}
+.players__list > *:hover {
+  transform: scale(1.5);
+}
+.players__list #player-1 {
+  background: url(./images/sprite_players_small.png) no-repeat 0px 0px;
+}
+.players__list #player-2 {
+  background: url(./images/sprite_players_small.png) no-repeat -42px 0px;
+}
+.players__list #player-3 {
+  background: url(./images/sprite_players_small.png) no-repeat -84px 0px;
+}
+.players__list #player-4 {
+  background: url(./images/sprite_players_small.png) no-repeat -126px 0px;
+}
+.players__list #player-5 {
+  background: url(./images/sprite_players_small.png) no-repeat -168px 0px;
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  height: -moz-max-content;
+  height: max-content;
+  gap: 16px;
+  padding: 16px;
+}
+dialog[open]::backdrop {
+  background-image: linear-gradient(45deg, magenta, rebeccapurple, dodgerblue, green);
+  opacity: 0.75;
+}
+dialog[open] .dialog__buttons {
+  display: flex;
+  gap: 16px;
+}
+dialog[open] button {
+  padding: 8px;
+}/*# sourceMappingURL=style.css.map */

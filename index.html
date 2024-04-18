@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="An aMAZEing project" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="app.js" type="module" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>AMAZEing project</title>
+	</head>
+	<body>
+		<header>
+			<h1>Amazeing</h1>
+		</header>
+		<main>
+			<dialog >
+				<h2 id="dialog-title">BRAVO !!!</h2>
+				<p id="text-dialog">Vous avez mis: <span id="dialog-timer"></span> pour finir le niveau <span id="dialog-level"></span></p>
+				<menu class="dialog__buttons">
+					<button id="dialog-next-level">Niveau suivant</button>
+					<button id="dialog-quit" >Arrêter le jeu</button>
+					<!-- <button  id="dialog-close" >Retour au jeu</button> -->
+				</menu>
+			</dialog>
+
+			<div class="container">
+				<form action="">
+					<div class="players">
+						<label>Select your player:</label>
+						<ul class="players__list">
+							<li id="player-1"></li>
+							<li id="player-2"></li>
+							<li id="player-3"></li>
+							<li id="player-4"></li>
+							<li id="player-5"></li>
+						</ul>
+					</div>
+					<!-- <div class="levels">
+						<label for="levels">Select a level:</label>
+						<select name="levels" id="levels">
+							<option value="level-0" id="0">- Select a level -</option>
+							<option value="level-1" id="1">Level 1</option>
+							<option value="level-2" id="2">Level 2</option>
+							<option value="level-3" id="3">Level 3</option>
+						</select>
+					</div> -->
+				</form>
+			</div>
+			<div class="container timer">
+				<p class="level" id="level">Level</p>
+				<span>-</span>
+				<p class="timer__current">
+					Level game time: <span id="timer__current"></span>
+				</p>
+			</div>
+			<div class="container maze" id="maze"></div>
+		</main>
+	</body>
+</html>
